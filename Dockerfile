@@ -6,5 +6,5 @@ RUN cargo build --release
 
 FROM debian:bookworm-slim
 RUN apt-get update && apt-get install -y ca-certificates libclang1 && rm -rf /var/lib/apt/lists/*
-COPY --from=builder /app/target/release/your-app-name /usr/local/bin/
-CMD ["your-app-name"]
+COPY --from=builder /app/target/release/turtle /usr/local/bin/
+CMD ["turtle"]
