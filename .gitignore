@@ -1,0 +1,4 @@
+/target
+.env
+mdbx.dat
+mdbx.lck

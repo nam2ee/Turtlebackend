@@ -1,0 +1,9 @@
+[package]
+name = "turtle-service"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+turtle-database.workspace = true
+image = "0.24.0"
+serde = { version = "1.0.218", features = ["derive"] }

@@ -1,0 +1,8 @@
+[package]
+name = "turtle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+turtle-net.workspace = true
+tokio = "1.43.0"

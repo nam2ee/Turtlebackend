@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = ["bin/turtle" , "crates/service", "crates/database", "crates/net", "crates/sol"]
+
+
+
+[workspace.dependencies]
+solana-sdk = "2.2.1"
+bs58 = "0.5.1"
+tokio-tungstenite = "0.26.2"
+tokio = { version = "1.43.0" , features = ["full"] }
+libmdbx = "0.5.3"
+axum = {version = "0.8.1", features=["macros", "multipart"]}
+turtle-database = {path = "crates/database"}
+turtle-service = {path = "crates/service"}
+turtle-net = {path = "crates/net"}
