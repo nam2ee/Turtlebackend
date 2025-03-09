@@ -1,4 +1,4 @@
-FROM rust:1.73 as builder
+FROM rust:1.85 as builder
 WORKDIR /app
 RUN apt-get update && apt-get install -y libclang-dev llvm-dev
 COPY . .
