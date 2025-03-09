@@ -33,7 +33,7 @@ pub async fn build_server() {
 
 
 
-    let listener = tokio::net::TcpListener::bind("0.0.0.0:8080").await.unwrap();
+    let listener = tokio::net::TcpListener::bind("0.0.0.0:443").await.unwrap();
     axum::serve(listener, app).await.unwrap();
 }
 
